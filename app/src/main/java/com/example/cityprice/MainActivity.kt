@@ -34,6 +34,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
 
+// Возвращаем константы на место
+private const val PREFS = "cityprice_prefs"
+private const val KEY_ONBOARDED = "onboarded"
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
